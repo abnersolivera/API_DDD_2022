@@ -37,7 +37,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddSingleton(typeof(IGeneric<>), typeof(RepositoryGenerics<>));
 builder.Services.AddSingleton<IMessage, RepositoryMessage>();
 
-//Serviço Dominio
+//ServiÃ§o Dominio
 builder.Services.AddSingleton<IServiceMessage, ServiceMessage>();
 
 //JWT
@@ -85,11 +85,11 @@ builder.Services.AddSingleton(mapper);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 //var urlDev = "https://dominiodocliente.com.br";
 //var urlHML = "https://dominiodocliente2.com.br";
