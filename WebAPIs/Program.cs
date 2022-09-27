@@ -97,7 +97,7 @@ var app = builder.Build();
 
 //app.UseCors(b => b.WithOrigins(urlDev, urlHML, urlPROD));
 
-var devClient = "http://localhost:4200";
+var devClient = "https://testeapidev.azurewebsites.net";
 app.UseCors(x => x
     .AllowAnyOrigin()
     .AllowAnyMethod()
